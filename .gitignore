@@ -1,0 +1,45 @@
+#include <iostream.h> 
+#include <stdlib.h> 
+#include <string.h> 
+int j,k; //j for loop, k for counter 
+float a,e,i,o,u;//small letter for no of char 
+int A,E,I,O,U;  // large for percantage 
+char in [100]; 
+void main() 
+{ 
+    cout<<"Enter A Word Or frace"<<endl; 
+    cin>>in; 
+    k=strlen(in); // counter k take value of the lenght of string 
+    cout<<endl; 
+
+
+for(j=0;j<=k;j++)//loop from 0 to the end of counter 
+{ 
+    if ('a'==in[j])      
+            a++; 
+
+
+    if ('e'==in[j])      
+            e++; 
+
+    if ('i'==in[j])      
+            i++; 
+
+    if ('o'==in[j])      
+            o++; 
+
+    if ('u'==in[j])      
+            u++; 
+} 
+
+
+    cout<<"You Typed "<<k<<" Characters, Which Was :"<<endl; 
+    cout<<"a: "<<a<<"  e: "<<e<<"  i: "<<i<<"  o: "<<o<<"  u: "<<u<<endl; 
+    cout<<endl; 
+
+    cout<<"Percantage Of Letter:"<<endl; 
+    cout<<"a: "<< (A=(a/k)*100)<<"% "<<" e: "<< (E=(e/k)*100)<<"% "<<" i: "<<(I=(i/k)*100)<<"% "<<" o: "<<(O=(o/k)*100)<<"% "<<" u: "<<(U=(u/k)*100)<<"% "<<endl; 
+
+
+
+}  
